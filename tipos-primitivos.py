@@ -1,0 +1,8 @@
+﻿alg = input("Digite Algo: ")
+print("O valor {} só tem espaços? {}".format(alg, alg.isspace()))
+print("O valor {} é um número? {}".format(alg, alg.isnumeric()))
+print("O valor {} é alfabético? {}".format(alg, alg.isalpha()))
+print("O valor {} é alfanumérico? {}".format(alg, alg.isalnum()))
+print("O valor {} está em maiúsculas? {}".format(alg, alg.isupper()))
+print("O valor {} está em minúsculas? {}".format(alg, alg.islower()))
+print("O valor {} está capitalizado? {}".format(alg, alg.istitle()))
