@@ -17,7 +17,7 @@ def criptografar(texto, sal):
     texto = texto.strip().encode("utf-8")
     sal = sal.strip().encode("utf-8")
 
-    if texto == "":
+    if not texto:
         raise Exception("Passe um Valor em Texto!")
 
     hashTex = sha1(texto).hexdigest()
