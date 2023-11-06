@@ -6,7 +6,7 @@ p = 0
 t = 0
 
 while p != n:
-    p = int(input("Digite um número de 1 à 9: "))
+    p = int(input("Digite um número de 1 a 9: "))
     t += 1
     print("Processando...\n")
     sleep(2)

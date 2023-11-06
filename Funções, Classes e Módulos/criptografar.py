@@ -13,12 +13,12 @@
 
 from hashlib import md5, sha1, sha256
 
-def criptografar(texto, sal):
+def criptografar(texto, sal = ""):
     texto = texto.strip().encode("utf-8")
     sal = sal.strip().encode("utf-8")
 
     if not texto:
-        raise Exception("Passe um Valor em Texto!")
+        raise Exception("\033[31mPasse um Valor em Texto!\033[m")
 
     hashTex = sha1(texto).hexdigest()
     hashSal = ""
